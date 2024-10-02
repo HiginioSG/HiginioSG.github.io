@@ -9,7 +9,15 @@
   
   <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" /> {% seo %}
 
-  <script type="text/javascript" id="MathJax-script" async
+ <script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\', '\']],
+      displayMath: [['$$', '$$'], ['\', '\']]
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 </head>
